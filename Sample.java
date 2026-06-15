@@ -1,7 +1,14 @@
+import java.io,*;
+
 public class Sample{
     public static void main(String[] args){
         int a=10;
         int b=0;
-        System.out.printlin(a/b);
+        
+        try{
+            System.out.println(a/b);
+        }catch(ArithmeticException e) {
+                System.out.println("エラー(0で割っています)"); 
+        }
     }
 }
